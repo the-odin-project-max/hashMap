@@ -45,10 +45,10 @@ if (index < 0 || index >= buckets.length) {
 >		In the meantime, a collision is when TWO DIFFERENT keys sit inside the same bucket, because they generate the same hash code (e.g. `Carlos` and Carla are both hashed to 3, so 3 becomes a location for `Carlos` AND Carla. However, we know that it is the collision. It means we should find a way how to resolve it — how to deal with collisions, which was mentioned in the previous lesson).
 > 
 > 		* Remember to grow your buckets size when it needs to, by calculating if your bucket has reached the load factor. Some of the methods in this assignment that are mentioned later could be reused to help you handle that growth logic more easily. So you may want to hold onto implementing your growing functionality just for now. However, the reason why we mention it with `set()` is because it’s important to grow buckets exactly when they are being expanded.
-`get(key)` takes one argument as a key and returns the value that is assigned to this key. If a key is not found, return `null`.
-> 1. `has(key)` takes a key as an argument and returns `true` or `false` based on whether or not the key is in the hash map.
-> 2. `remove(key)` takes a key as an argument. If the given key is in the hash map, it should remove the entry with that key and return `true`. If the key isn’t in the hash map, it should return `false`.
-> 3. `length()` returns the number of stored keys in the hash map.
+> 3. `get(key)` takes one argument as a key and returns the value that is assigned to this key. If a key is not found, return `null`.
+> 4. `has(key)` takes a key as an argument and returns `true` or `false` based on whether or not the key is in the hash map.
+> 5. `remove(key)` takes a key as an argument. If the given key is in the hash map, it should remove the entry with that key and return `true`. If the key isn’t in the hash map, it should return `false`.
+> 6. `length()` returns the number of stored keys in the hash map.
 > 4. `clear()` removes all entries in the hash map.
 > 5. `keys()` returns an array containing all the keys inside the hash map.
 > 6. `values()` returns an array containing all the values.
